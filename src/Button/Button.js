@@ -1,8 +1,8 @@
 import React from "react";
 
-const Button = ({ value, handleClick }) => (
+const Button = ({ value, handleClick, className }) => (
   <div>
-    <input type="submit" value={value} onClick={handleClick} />
+    <input className={className} type="submit" value={value} onClick={handleClick} />
   </div>
 );
 
