@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 
+import './HomePage.css'
+
 import NavBar from '../NavBar/NavBar'
 import DisplayComic from '../DisplayComic/DisplayComic'
 
