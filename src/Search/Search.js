@@ -3,7 +3,7 @@ import React from "react";
 const Search = ({ placeholderText, searchValue, updateSearchValue }) => (
   <section>
     <input
-      className="searchBar"
+      className="searchInput"
       type="search"
       placeholder={placeholderText}
       onChange={updateSearchValue}
