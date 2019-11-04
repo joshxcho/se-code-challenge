@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 
+import DisplayComic from './DisplayComic'
+
 class HomePage extends Component {
   state = {
     latestComic: {}
@@ -20,7 +22,7 @@ class HomePage extends Component {
     const {latestComic} = this.state
     return (
       <div>
-       <img className="latestImage" src={latestComic.img} alt={latestComic.title} title={latestComic.alt} ></img>
+       <DisplayComic image={latestComic.img} alt={latestComic.title} title={latestComic.alt}/>
       </div>
     );
   }
