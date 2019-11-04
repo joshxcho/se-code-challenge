@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
+import './SearchPage.css'
+
 import NavBar from '../NavBar/NavBar'
 import Search from '../Search/Search'
 import Button from '../Button/Button'
@@ -30,12 +32,14 @@ export default class SearchPage extends Component {
   render() {
     const {searchValue, searchedComic, isSearched} = this.state
     return (
-      <div>
+      <div className="search-page">
         <NavBar />
+        <div className="search-container">
         <Search placeholderText="" searchValue={searchValue} updateSearchValue={this.updateSearchValue} />
-        <Button handleClick={this.fetchSearchResult} value="SEARCH" />
+        <Button className="searchSubmit" handleClick={this.fetchSearchResult} value="SEARCH" />
+        </div>
         {isSearched &&
-        <DisplayComic className="searchImage" image={searchedComic.img} alt={searchedComic.title} title={searchedComic.alt}/>
+        <DisplayComic value="searchImage" image={searchedComic.img} alt={searchedComic.title} title={searchedComic.alt}/>
         }
       </div>
     )

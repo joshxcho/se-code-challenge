@@ -1,0 +1,34 @@
+.search-container {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+
+.searchInput {
+  padding: 5px;
+  height: 40px;
+  width: 12rem;
+  border-style: none;
+  font-size: 16px;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.searchSubmit {
+  height: 40px;
+  width: 5rem;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #0b69f7;
+  border: none;
+  letter-spacing: 0.2rem;
+  transition: 0.3s opacity ease;
+  cursor: pointer;
+}
+
+.searchSubmit:hover {
+  opacity: 0.9;
+}
+
+.searchImage {
+  margin: 20px;
+}
