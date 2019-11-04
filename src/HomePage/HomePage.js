@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 
-import NavBar from './NavBar'
-import DisplayComic from './DisplayComic'
+import NavBar from '../NavBar/NavBar'
+import DisplayComic from '../DisplayComic/DisplayComic'
 
 class HomePage extends Component {
   state = {

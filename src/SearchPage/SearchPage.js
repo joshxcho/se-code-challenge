@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
-import NavBar from './NavBar'
-import Search from './Search'
-import Button from './Button'
-import DisplayComic from './DisplayComic'
+import NavBar from '../NavBar/NavBar'
+import Search from '../Search/Search'
+import Button from '../Button/Button'
+import DisplayComic from '../DisplayComic/DisplayComic'
 
 export default class SearchPage extends Component {
 
