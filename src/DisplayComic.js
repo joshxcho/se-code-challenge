@@ -1,7 +1,7 @@
 import React from 'react'
 
-const DisplayComic = ({image, alt, title}) => (
-  <img className="latestImage" src={image} alt={title} title={alt} ></img>
+const DisplayComic = ({image, alt, title, value}) => (
+  <img className={value} src={image} alt={title} title={alt} ></img>
 )
 
 export default DisplayComic
