@@ -1,14 +1,16 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+import './NavBar.css'
+
 const NavBar = () => (
   <div className="navbar">
     <ul>
       <li className="latest">
-        <Link to="/">LATEST</Link>
+        <Link to="/">Latest</Link>
       </li>
       <li className="search">
-        <Link to="/search">SEARCH</Link>
+        <Link to="/search">Search</Link>
       </li>
     </ul>
   </div>

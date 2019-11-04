@@ -1,0 +1,15 @@
+ul li {
+  display: inline;
+  color: #ffffff;
+  list-style-type: none;
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0066ff;
+}
