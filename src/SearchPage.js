@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
+import NavBar from './NavBar'
 import Search from './Search'
 import Button from './Button'
 import DisplayComic from './DisplayComic'
@@ -20,7 +21,6 @@ export default class SearchPage extends Component {
   }
 
   fetchSearchResult = () => {
-    console.log('ouch')
     const {searchValue} = this.state;
     const endpoint = `https://xkcd.now.sh/?comic=${searchValue}`;
     axios.get(endpoint)
@@ -31,10 +31,11 @@ export default class SearchPage extends Component {
     const {searchValue, searchedComic, isSearched} = this.state
     return (
       <div>
+        <NavBar />
         <Search placeholderText="" searchValue={searchValue} updateSearchValue={this.updateSearchValue} />
         <Button handleClick={this.fetchSearchResult} value="SEARCH" />
         {isSearched &&
-        <DisplayComic image={searchedComic.img} alt={searchedComic.title} title={searchedComic.alt}/>
+        <DisplayComic className="searchImage" image={searchedComic.img} alt={searchedComic.title} title={searchedComic.alt}/>
         }
       </div>
     )
