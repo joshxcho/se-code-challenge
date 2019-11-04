@@ -24,10 +24,10 @@ class HomePage extends Component {
   render() {
     const {latestComic} = this.state
     return (
-      <div>
+      <React.Fragment>
        <NavBar />
        <DisplayComic value="latestImage" image={latestComic.img} alt={latestComic.title} title={latestComic.alt}/>
-      </div>
+      </React.Fragment>
     );
   }
 }

@@ -32,7 +32,7 @@ export default class SearchPage extends Component {
   render() {
     const {searchValue, searchedComic, isSearched} = this.state
     return (
-      <div className="search-page">
+      <React.Fragment>
         <NavBar />
         <div className="search-container">
         <Search placeholderText="" searchValue={searchValue} updateSearchValue={this.updateSearchValue} />
@@ -41,7 +41,7 @@ export default class SearchPage extends Component {
         {isSearched &&
         <DisplayComic value="searchImage" image={searchedComic.img} alt={searchedComic.title} title={searchedComic.alt}/>
         }
-      </div>
+     </React.Fragment>
     )
   }
 }
