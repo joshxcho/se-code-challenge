@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Hind|Playfair+Display&display=swap");
+
+:root {
+  --mainDarkText: #3d3d3f;
+  --mainLight: #ffffff;
+  --mainbackgroundDark: #1f7bd1;
+  --backgroundForecastItems: #155a9b;
+  --whitish: #f9f9f9;
+  --borderColor: #ccd1cb;
+  --mainFont: "Hind", sans-serif;
+}
+
+body {
+  background: var(--mainLight);
+  padding: 1em;
+  font: var(--mainFont);
+}
